@@ -79,7 +79,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'gastronomrepublic.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 DATABASES = {
     'default': {
