@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
+#DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 import os
 import posixpath
 import dj_database_url
@@ -24,7 +24,7 @@ import dj_database_url
 SECRET_KEY = 'e30e5161-19a4-47aa-ad6c-d333a7d082b0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
+DEBUG = True
 
 ALLOWED_HOSTS = ['gastronomrepublic.herokuapp.com', '*']
 
