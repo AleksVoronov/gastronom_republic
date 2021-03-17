@@ -1,0 +1,1 @@
+web: gunicorn gastronom_republic.wsgi --log-file -
