@@ -26,7 +26,7 @@ SECRET_KEY = 'e30e5161-19a4-47aa-ad6c-d333a7d082b0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gastronomrepublic.herokuapp.com', '*']
+ALLOWED_HOSTS = ['gastronomrepublic.herokuapp.com']
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
