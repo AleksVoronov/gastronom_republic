@@ -1,0 +1,58 @@
+{% extends "app/layout.html" %}
+{% load static%}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container">
+
+    <a href="" class="button button-primary" data-toggle="modal" data-target="#myModal">pošlete svou zprávu</a>
+<address>
+    <h2>Naše kontakty:</h2>
+    Tatarkova 728/12
+    Praha 4 - Háje
+    149 00
+    Mobil:    <a href="tel:604 445 108">604 445 108</a>  
+       
+</address>
+
+<address>
+    Provozovatel:
+
+    Republic Tour s.r.o.
+    IČ: 284 29 435
+    Sídlo : Tatarkova 728/12,149 00, Praha 4 - Háje
+    email:   info@gastronomrepublic.cz
+                objednavky@gastronomrepublic.cz
+</address>
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+         
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form method="post">
+          {% csrf_token %}
+          {{ form|crispy }}
+          </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+{% endblock %}
